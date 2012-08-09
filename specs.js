@@ -1,4 +1,5 @@
 var dotnotation = require('./');
+var should = require('should');
 
 describe('Dot Notation', function () {
 
@@ -15,6 +16,10 @@ describe('Dot Notation', function () {
 
   it('returns 22', function () {
     dotnotation(object, 'shipping.america').should.eql('22');
+  });
+
+  it('returns undefined', function () {
+    should.not.exist(dotnotation(object, 'shipping.america.la.heyo'));
   });
 
 });

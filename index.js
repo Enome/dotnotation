@@ -5,6 +5,10 @@ var dotnotation = function (object, path) {
 
   for (i; i < attributes.length; i += 1) {
     object = object[attributes[i]];
+
+    if (typeof object === 'undefined') {
+      break;
+    }
   }
 
   return object;
