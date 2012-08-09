@@ -1,0 +1,10 @@
+{
+  "author": "Geert Pasteels <geert.pasteels@gmail.com>",
+  "name": "dotnotation",
+  "description": "",
+  "version": "1.0.0",
+  "keywords": [ "objects", "dot notation" ],
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {}
+}
